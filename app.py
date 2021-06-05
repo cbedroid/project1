@@ -12,7 +12,7 @@ from forms import SignupForm, LoginForm, SearchForm
 app = Flask(__name__,template_folder='templates',static_url_path='')
 app.config['SECRET_KEY'] = "44e04c1e98a03ede943c9f026fd612e59b50901a5c1b6acf1713edc9743361fd"
 #TODO:INFO: you need a secret key(above). Without one FlaskForm will not work 
-#   Your application will be vunerable to CSFT attack without one.
+#   Your application will be vunerable to CSRF attack without one.
 #   It is a secret key for a reason. For best practice,
 #   you should NOT have it visible in plain sight like this when 
 #   deploying your app in a "real-world" web application.
